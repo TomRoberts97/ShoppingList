@@ -12,6 +12,12 @@
             <Entry Text="{Binding Text, Mode=TwoWay}" FontSize="Medium" />
             <Label Text="Description" FontSize="Medium" />
             <Editor Text="{Binding Description, Mode=TwoWay}" AutoSize="TextChanges" FontSize="Medium" Margin="0" />
+            <Label Text="Quantity" FontSize="Medium" />
+
+        <!-- nned to implement bindings and commands for the Quantity field, also needs adding to the CollectionView-->
+            <Entry Text="{Binding Quantity, Mode=TwoWay}" FontSize="Medium" />
+            
+            
             <StackLayout Orientation="Horizontal">
                 <Button Text="Cancel" Command="{Binding CancelCommand}" HorizontalOptions="FillAndExpand"></Button>
                 <Button Text="Save" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand"></Button>

@@ -3,12 +3,10 @@
 namespace ShoppingList.Models
 {
 
-    //design custom ControllerView rows using;
+    //design custom ControllerView rows using;    Webpage for similar design
     // image of an item/meal (each class will need an image field),
     // Largest Text = Items name
-    //
-
-    // will also need a details page for Meal and Item, to show when clicked on in ControllerView,
+    
 
     //How can i display a Meal in ControllerView?
     // Is there an ability to 'Expand' like the arrows in the Solution Explorer
@@ -29,7 +27,7 @@ namespace ShoppingList.Models
         public string Description { get; set; }
 
 
-        public int MyProperty { get; set; }
+        public int Quantity { get; set; }
         
         // ItemType (Fruit, Veg , ect)(go over shop categories)(Use a drop down list for user input)
 

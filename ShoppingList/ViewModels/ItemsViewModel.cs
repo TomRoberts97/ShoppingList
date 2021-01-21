@@ -19,7 +19,7 @@ namespace ShoppingList.ViewModels
 
         public ItemsViewModel()
         {
-            Title = "Browse";
+            Title = "Shopping List";
             Items = new ObservableCollection<Item>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 
