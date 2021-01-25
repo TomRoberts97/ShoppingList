@@ -11,6 +11,7 @@ namespace ShoppingList.ViewModels
     {
         private string text;
         private string description;
+        private int quantity;
 
         public NewItemViewModel()
         {
@@ -38,6 +39,12 @@ namespace ShoppingList.ViewModels
             set => SetProperty(ref description, value);
         }
 
+        public int Quantity 
+        {
+            get => quantity;
+            set => SetProperty(ref quantity, value);
+        }
+
         public Command SaveCommand { get; }
         public Command CancelCommand { get; }
 
@@ -53,7 +60,8 @@ namespace ShoppingList.ViewModels
             {
                 Id = Guid.NewGuid().ToString(),
                 Text = Text,
-                Description = Description
+                Description = Description,
+                Quantity = Quantity
             };
 
             await DataStore.AddItemAsync(newItem);

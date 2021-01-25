@@ -26,14 +26,14 @@ namespace ShoppingList.Models
         public string Text { get; set; } // this can be seen as Name (change after seeing functionality of variable)
         public string Description { get; set; }
 
-
+        // how to save images, do items need images or Just Meals?
         public int Quantity { get; set; }
         
         // ItemType (Fruit, Veg , ect)(go over shop categories)(Use a drop down list for user input)
 
-        // measurement (ml,grams ect)(drop down or way to 
+        // measurement (ml,grams ect)(drop down list for user to choose) 
 
-        // Quantity (number of item
+       
 
 
 
