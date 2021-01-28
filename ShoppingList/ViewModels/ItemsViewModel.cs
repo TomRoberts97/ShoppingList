@@ -15,7 +15,7 @@ namespace ShoppingList.ViewModels
 
         public ObservableCollection<Item> Items { get; }
 
-        public List<Meal> MealsList { get; set; }
+        public List<Meal> MealList { get; set; }
         public Command LoadItemsCommand { get; }
         public Command AddItemCommand { get; }
         public Command<Item> ItemTapped { get; }
@@ -25,8 +25,10 @@ namespace ShoppingList.ViewModels
             Title = "Shopping List";
 
             Items = new ObservableCollection<Item>();
+
+            MealList = new List<Meal>();
             // testing meal/item grouping
-            //CreateMealList();
+            CreateMealList();
 
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand()); //  needed for Filling Items from the MockDataStore
             //LoadItemsCommand = new Command(CreateMealList); // testing loading meal data
@@ -34,6 +36,8 @@ namespace ShoppingList.ViewModels
             ItemTapped = new Command<Item>(OnItemSelected);
 
             AddItemCommand = new Command(OnAddItem);
+
+            
         }
 
         async Task ExecuteLoadItemsCommand()
@@ -42,55 +46,15 @@ namespace ShoppingList.ViewModels
 
             try
             {
-                //Items.Clear();
-                //var items = await DataStore.GetItemsAsync(true);
-                //foreach (var item in items)
-                //{
-                //    Items.Add(item);
-                //}
-
-                MealsList = new List<Meal>
+                Items.Clear();
+                var items = await DataStore.GetItemsAsync(true);
+                foreach (var item in items)
                 {
-                new Meal("Chicken Curry", new List<Item>
-                {
-                    new Item
-                    {
-                        Text = "Chicken Breast",
-                        Description = "A breast of chicken",
-                        Quantity = 2
-                    },
-                    new Item
-                    {
-                        Text = "Curry Paste",
-                        Description = "Indian curry paste",
-                        Quantity = 1
-                    }
+                    Items.Add(item);
+                }
 
-                }),
+               
 
-                new Meal("Beef Noodles", new List<Item>
-                {
-                    new Item
-                    {
-                        Text = "Beef Strips",
-                        Description = "A packet of Beef steak, cut into strips",
-                        Quantity = 1
-                    },
-                    new Item
-                    {
-                        Text = "Rice Noodles",
-                        Description = "Noodles made from Rice, Gluten free!",
-                        Quantity = 2
-                    },
-                      new Item
-                    {
-                        Text = "Sweet and Sour sauce",
-                        Description = "A Jar of branded Sweet and Sour sauce",
-                        Quantity = 1
-                    }
-
-                })
-            };
 
             }
             catch (Exception ex)
@@ -133,6 +97,51 @@ namespace ShoppingList.ViewModels
             await Shell.Current.GoToAsync($"{nameof(ItemDetailPage)}?{nameof(ItemDetailViewModel.ItemId)}={item.Id}");
         }
 
-        
+        public string Name { get; set; }
+        public string Quantity { get; set; }
+        public string Description { get; set; }
+
+        public void CreateMealList()
+        {
+            MealList.Add(
+
+                new Meal("Chicken Curry", new List<Item>
+                {
+                    new Item { Name = "Chicken Breast", Description = "A breast of chicken", Quantity = 2},
+                    new Item
+                    {
+                        Name = "Curry Paste",
+                        Description = "Indian curry paste",
+                        Quantity = 1
+                    }
+
+                }));
+
+            MealList.Add(new Meal("Beef Noodles", new List<Item>
+                {
+                    new Item
+                    {
+                        Name = "Beef Strips",
+                        Description = "A packet of Beef steak, cut into strips",
+                        Quantity = 1
+                    },
+                    new Item
+                    {
+                        Name = "Rice Noodles",
+                        Description = "Noodles made from Rice, Gluten free!",
+                        Quantity = 2
+                    },
+                      new Item
+                    {
+                        Name = "Sweet and Sour sauce",
+                        Description = "A Jar of branded Sweet and Sour sauce",
+                        Quantity = 1
+                    }
+
+                }));
+            
+            Console.WriteLine("Test MealsList count:" + MealList.Count);
+
+        }
     }
 }

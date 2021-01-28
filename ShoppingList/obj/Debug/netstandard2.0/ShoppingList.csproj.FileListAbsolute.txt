@@ -1,7 +1,3 @@
-C:\Users\Tom\Documents\ProjectWork\ShoppingList\ShoppingList\bin\Debug\netstandard2.0\ShoppingList.deps.json
-C:\Users\Tom\Documents\ProjectWork\ShoppingList\ShoppingList\bin\Debug\netstandard2.0\ShoppingList.dll
-C:\Users\Tom\Documents\ProjectWork\ShoppingList\ShoppingList\bin\Debug\netstandard2.0\ref\ShoppingList.dll
-C:\Users\Tom\Documents\ProjectWork\ShoppingList\ShoppingList\bin\Debug\netstandard2.0\ShoppingList.pdb
 C:\Users\Tom\Documents\ProjectWork\ShoppingList\ShoppingList\obj\Debug\netstandard2.0\ShoppingList.csprojAssemblyReference.cache
 C:\Users\Tom\Documents\ProjectWork\ShoppingList\ShoppingList\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\Tom\Documents\ProjectWork\ShoppingList\ShoppingList\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
@@ -13,7 +9,11 @@ C:\Users\Tom\Documents\ProjectWork\ShoppingList\ShoppingList\obj\Debug\netstanda
 C:\Users\Tom\Documents\ProjectWork\ShoppingList\ShoppingList\obj\Debug\netstandard2.0\ShoppingList.AssemblyInfoInputs.cache
 C:\Users\Tom\Documents\ProjectWork\ShoppingList\ShoppingList\obj\Debug\netstandard2.0\ShoppingList.AssemblyInfo.cs
 C:\Users\Tom\Documents\ProjectWork\ShoppingList\ShoppingList\obj\Debug\netstandard2.0\ShoppingList.csproj.CoreCompileInputs.cache
-C:\Users\Tom\Documents\ProjectWork\ShoppingList\ShoppingList\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Tom\Documents\ProjectWork\ShoppingList\ShoppingList\obj\Debug\netstandard2.0\ShoppingList.dll
 C:\Users\Tom\Documents\ProjectWork\ShoppingList\ShoppingList\obj\Debug\netstandard2.0\ref\ShoppingList.dll
 C:\Users\Tom\Documents\ProjectWork\ShoppingList\ShoppingList\obj\Debug\netstandard2.0\ShoppingList.pdb
+C:\Users\Tom\Documents\ProjectWork\ShoppingList\ShoppingList\bin\Debug\netstandard2.0\ShoppingList.deps.json
+C:\Users\Tom\Documents\ProjectWork\ShoppingList\ShoppingList\bin\Debug\netstandard2.0\ShoppingList.dll
+C:\Users\Tom\Documents\ProjectWork\ShoppingList\ShoppingList\bin\Debug\netstandard2.0\ref\ShoppingList.dll
+C:\Users\Tom\Documents\ProjectWork\ShoppingList\ShoppingList\bin\Debug\netstandard2.0\ShoppingList.pdb
+C:\Users\Tom\Documents\ProjectWork\ShoppingList\ShoppingList\obj\Debug\netstandard2.0\XamlC.stamp

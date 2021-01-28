@@ -23,7 +23,7 @@ namespace ShoppingList.Models
     public class Item
     {
         public string Id { get; set; }
-        public string Text { get; set; } // this can be seen as Name (change after seeing functionality of variable)
+        public string Name { get; set; } // this can be seen as Name (change after seeing functionality of variable)
         public string Description { get; set; }
 
         // how to save images, do items need images or Just Meals?

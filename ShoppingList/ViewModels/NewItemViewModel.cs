@@ -9,7 +9,7 @@ namespace ShoppingList.ViewModels
 {
     public class NewItemViewModel : BaseViewModel
     {
-        private string text;
+        private string name;
         private string description;
         private int quantity;
 
@@ -23,14 +23,14 @@ namespace ShoppingList.ViewModels
 
         private bool ValidateSave()
         {
-            return !String.IsNullOrWhiteSpace(text)
+            return !String.IsNullOrWhiteSpace(name)
                 && !String.IsNullOrWhiteSpace(description);
         }
 
-        public string Text
+        public string Name
         {
-            get => text;
-            set => SetProperty(ref text, value);
+            get => name;
+            set => SetProperty(ref name, value);
         }
 
         public string Description
@@ -59,7 +59,7 @@ namespace ShoppingList.ViewModels
             Item newItem = new Item()
             {
                 Id = Guid.NewGuid().ToString(),
-                Text = Text,
+                Name = Name,
                 Description = Description,
                 Quantity = Quantity
             };

@@ -43,13 +43,13 @@ namespace ShoppingList.Views
                 {
                     new Item
                     {
-                        Text = "Chicken Breast",
+                        Name = "Chicken Breast",
                         Description = "A breast of chicken",
                         Quantity = 2
                     },
                     new Item
                     {
-                        Text = "Curry Paste",
+                        Name = "Curry Paste",
                         Description = "Indian curry paste",
                         Quantity = 1
                     }
@@ -60,19 +60,19 @@ namespace ShoppingList.Views
                 {
                     new Item
                     {
-                        Text = "Beef Strips",
+                        Name = "Beef Strips",
                         Description = "A packet of Beef steak, cut into strips",
                         Quantity = 1
                     },
                     new Item
                     {
-                        Text = "Rice Noodles",
+                        Name = "Rice Noodles",
                         Description = "Noodles made from Rice, Gluten free!",
                         Quantity = 2
                     },
                       new Item
                     {
-                        Text = "Sweet and Sour sauce",
+                        Name = "Sweet and Sour sauce",
                         Description = "A Jar of branded Sweet and Sour sauce",
                         Quantity = 1
                     }
