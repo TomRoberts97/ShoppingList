@@ -14,12 +14,12 @@ namespace ShoppingList.Services
         {
             items = new List<Item>()
             {
-                new Item { Id = Guid.NewGuid().ToString(), Name = "First item", Description="This is an item description.", Quantity = 1 },
-                new Item { Id = Guid.NewGuid().ToString(), Name = "Second item", Description="This is an item description." , Quantity = 1},
-                new Item { Id = Guid.NewGuid().ToString(), Name = "Third item", Description="This is an item description." , Quantity = 1},
-                new Item { Id = Guid.NewGuid().ToString(), Name = "Fourth item", Description="This is an item description." , Quantity = 1},
-                new Item { Id = Guid.NewGuid().ToString(), Name = "Fifth item", Description="This is an item description." , Quantity = 1},
-                new Item { Id = Guid.NewGuid().ToString(), Name = "Sixth item", Description="This is an item description." , Quantity = 1}
+                new Item { Id = Guid.NewGuid().ToString(), Name = "Potatoes", Description="This is an item description.", Quantity = 5 },
+                new Item { Id = Guid.NewGuid().ToString(), Name = "Chicken Breast", Description="This is an item description." , Quantity = 4},
+                new Item { Id = Guid.NewGuid().ToString(), Name = "Bag of Carrots", Description="This is an item description." , Quantity = 1},
+                new Item { Id = Guid.NewGuid().ToString(), Name = "Orange Juice", Description="This is an item description." , Quantity = 1},
+                new Item { Id = Guid.NewGuid().ToString(), Name = "Bananas 5 Pack", Description="This is an item description." , Quantity = 4},
+                new Item { Id = Guid.NewGuid().ToString(), Name = "Cookies (need better naming idea)", Description="This is an item description." , Quantity = 1}
             };
         }
 

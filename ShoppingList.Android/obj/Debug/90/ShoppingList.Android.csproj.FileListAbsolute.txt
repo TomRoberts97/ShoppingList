@@ -493,3 +493,4 @@ C:\Users\Tom\Documents\ProjectWork\ShoppingList\ShoppingList.Android\obj\Debug\9
 C:\Users\Tom\Documents\ProjectWork\ShoppingList\ShoppingList.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\Tom\Documents\ProjectWork\ShoppingList\ShoppingList.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Tom\Documents\ProjectWork\ShoppingList\ShoppingList.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\Tom\Documents\ProjectWork\ShoppingList\ShoppingList.Android\obj\Debug\90\res\drawable\icon_info.png

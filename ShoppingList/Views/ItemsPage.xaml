@@ -14,36 +14,36 @@
       x:DataType enables compiled bindings for better performance and compile time validation of binding expressions.
       https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/data-binding/compiled-bindings
     -->
-    
-    
-    
-    <!--<RefreshView x:DataType="local:ItemsViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">-->
+
+
+
+    <!--<RefreshView x:DataType="local:ItemsViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
         <CollectionView x:Name="ItemsListView"
                 ItemsSource="{Binding MealList}"
-                        IsGrouped="True">
-            <!--<CollectionView.GroupHeaderTemplate>
+                       >
+            --><!--<CollectionView.GroupHeaderTemplate>
                 <DataTemplate>
                     <Label Text="{Binding Name}"
                    BackgroundColor="LightGray"
                    FontSize="Large"
                    FontAttributes="Bold" />
                 </DataTemplate>
-            </CollectionView.GroupHeaderTemplate>-->
+            </CollectionView.GroupHeaderTemplate>--><!--
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <StackLayout>
-                    <!--<StackLayout Padding="10" x:DataType="model:Item"> -->
+                    --><!--<StackLayout Padding="10" x:DataType="model:Item"> -->
                         <!--<Image Source="{Binding }" 
                             
-                            />-->
+                            />--><!--
                         <Label Text="{Binding Name}" 
                             LineBreakMode="NoWrap" 
                             Style="{DynamicResource ListItemTextStyle}" 
                             FontSize="16" />
-                        <!--<Label Text="{Binding Description}" 
+                        --><!--<Label Text="{Binding Description}" 
                             LineBreakMode="NoWrap"
                             Style="{DynamicResource ListItemDetailTextStyle}"
-                            FontSize="13" />-->
+                            FontSize="13" />--><!--
                         <Label Text="{Binding Quantity, StringFormat ='Quantity = {0:F0}'}" 
                             LineBreakMode="NoWrap"
                             Style="{DynamicResource ListItemDetailTextStyle}"
@@ -59,35 +59,27 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
-    <!--</RefreshView>-->      
+    </RefreshView>-->     
 
     <!--TEST VIEW , CANT GET DATA TO SHOW , NEED TO TEST IF DATA IS IN THE LIST -->
-    <!--<RefreshView x:DataType="local:ItemsViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="False">
-        <CollectionView x:Name="shoppingListView" ItemsSource="{Binding MealsList}"
-                    IsGrouped="True">
+    <RefreshView x:DataType="local:ItemsViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
+        <CollectionView x:Name="ItemsListView" ItemsSource="{Binding Items}" SelectionMode="None">
+            <!-- SelectionMode might change, if i have more uses for Item selection -->
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Grid Padding="10">
-                        <Grid.RowDefinitions >
-                            <RowDefinition Height ="*"/>
-                            <RowDefinition Height ="*"/>
-                            <RowDefinition Height ="*"/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition/>
-                        </Grid.ColumnDefinitions>
+                    <Grid RowDefinitions="*" ColumnDefinitions="3*, .8*, *, * , *" Padding="10">
 
-                        <Label Grid.Row="0"
-                           Text="{Binding Name}"/>
-                        <Label Grid.Row="1"
-                           Text="{Binding Quantity, StringFormat ='Quantity = {0:F0}'}"/>
-                        <Label Grid.Row="2"
-                           Text="{Binding Description}"/>
+                        <Label Grid.Row="0" Grid.Column="0" Text="{Binding Name}" FontSize="20" TextColor="Black" />
+                        <ImageButton Source="icon_info.png" Grid.Row="0" Grid.Column="1" BackgroundColor="White" WidthRequest="35" HeightRequest="35" CornerRadius="18" HorizontalOptions="Center" VerticalOptions="Center"  />
+                        <!--<Button Grid.Row="0" Grid.Column="2" BackgroundColor="LightGray" Text="i" WidthRequest="35" HeightRequest="35" CornerRadius="18" HorizontalOptions="Center" VerticalOptions="Center"/>     Command="{Binding Source={RelativeSource AncestorType={x:Type local:ItemsViewModel}}, Path=ItemTapped}" CommandParameter="{Binding .}"-->
+                        <!--<Button WidthRequest="60" HeightRequest="60" BorderRadius="30" HorizontalOptions="Center" VerticalOptions="Center"/>-->
+                        <Label Grid.Row="0" Grid.Column="4" Text="{Binding Quantity, StringFormat ='X {0:F0}'}" FontSize="16" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        <!--<Label Grid.Row="0" Grid.Column="" Text="{Binding Description}"/>-->
 
                     </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
-    </RefreshView>-->
+    </RefreshView>
 
 </ContentPage>
