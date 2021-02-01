@@ -8324,14 +8324,14 @@ namespace ShoppingList.Droid
 			// aapt resource value: 0x7F07005B
 			public const int design_snackbar_background = 2131165275;
 			
-			// aapt resource value: 0x7F070061
-			public const int icons8_info_16 = 2131165281;
-			
 			// aapt resource value: 0x7F07005F
 			public const int icon_about = 2131165279;
 			
 			// aapt resource value: 0x7F070060
 			public const int icon_feed = 2131165280;
+			
+			// aapt resource value: 0x7F070061
+			public const int icon_info = 2131165281;
 			
 			// aapt resource value: 0x7F07005C
 			public const int ic_mtrl_chip_checked_black = 2131165276;

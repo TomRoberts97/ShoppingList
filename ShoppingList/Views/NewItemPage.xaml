@@ -16,6 +16,23 @@
 
         <!-- nned to implement bindings and commands for the Quantity field, also needs adding to the CollectionView-->
             <Entry Text="{Binding Quantity, Mode=TwoWay}" FontSize="Medium" />
+
+            
+            
+            <SearchBar x:Name="searchBar"
+                  TextChanged="OnTextChanged"
+                   />
+            
+            <ListView x:Name="searchResults"
+                  />
+                  <!--ItemsSource="{Binding SearchResults}" ListView
+                    SearchCommand="{Binding PerformSearch}" SearchBar
+                   SearchCommandParameter="{Binding Text, Source={x:Reference searchBar}}"
+            
+            --> 
+                      
+
+            
             
             
             <StackLayout Orientation="Horizontal">

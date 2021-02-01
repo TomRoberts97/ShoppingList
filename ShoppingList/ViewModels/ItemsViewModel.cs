@@ -28,7 +28,7 @@ namespace ShoppingList.ViewModels
 
             MealList = new List<Meal>();
             // testing meal/item grouping
-            CreateMealList();
+            //CreateMealList();
 
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand()); //  needed for Filling Items from the MockDataStore
             //LoadItemsCommand = new Command(CreateMealList); // testing loading meal data
@@ -90,6 +90,9 @@ namespace ShoppingList.ViewModels
 
         async void OnItemSelected(Item item)
         {
+
+            Console.WriteLine("OnItemSelected Run!");
+
             if (item == null)
                 return;
 
