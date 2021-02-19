@@ -70,7 +70,7 @@
                     <Grid RowDefinitions="*" ColumnDefinitions="3*, .8*, *, * , *" Padding="10">
 
                         <Label Grid.Row="0" Grid.Column="0" Text="{Binding Name}" FontSize="16" TextColor="Black"  VerticalOptions="Center"/>
-                        <ImageButton Source="icon_info.png" Grid.Row="0" Grid.Column="1" BackgroundColor="White" WidthRequest="35" HeightRequest="35" CornerRadius="18" HorizontalOptions="Center" VerticalOptions="Center" />
+                        <!--<ImageButton Source="icon_info.png" Grid.Row="0" Grid.Column="1" BackgroundColor="White" WidthRequest="35" HeightRequest="35" CornerRadius="18" HorizontalOptions="Center" VerticalOptions="Center" />-->
                         <!--<Button Grid.Row="0" Grid.Column="2" BackgroundColor="LightGray" Text="i" WidthRequest="35" HeightRequest="35" CornerRadius="18" HorizontalOptions="Center" VerticalOptions="Center"/>     Command="{Binding Source={RelativeSource AncestorType={x:Type local:ItemsViewModel}}, Path=ItemTapped}" CommandParameter="{Binding .}"-->
                         <!--<Button WidthRequest="60" HeightRequest="60" BorderRadius="30" HorizontalOptions="Center" VerticalOptions="Center"/>-->
                         <Label Grid.Row="0" Grid.Column="4" Text="{Binding Quantity, StringFormat ='X {0:F0}'}" FontSize="18" HorizontalOptions="Center" VerticalOptions="Center"/>

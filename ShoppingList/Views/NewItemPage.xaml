@@ -19,9 +19,9 @@
 
             
             
-            <SearchBar x:Name="searchBar"
+            <!--<SearchBar x:Name="searchBar"
                   TextChanged="OnTextChanged"
-                   />
+                   />-->
             
             <ListView x:Name="searchResults"
                   />
